@@ -1,9 +1,10 @@
 # Python CircleCI 2.0 configuration file
-version: 2.1 # Set the CI version.
+ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.9
+      - image: circleci/python:3.9      
+      working_directory: ~/repo
 
  steps:
   # Step1: Obtaining the repo from GitHub
@@ -23,3 +24,5 @@ jobs:
       flake8 --exclude=venv* --statistics
       pytest -v --cov=Calculator
 
+
+ 
