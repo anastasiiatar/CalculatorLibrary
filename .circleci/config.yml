@@ -1,10 +1,11 @@
 # Python CircleCI 2.0 configuration file
- version: 2
+version: 2.1 # Set the CI version.
 jobs:
   build:
     docker:
-      - image: circleci/python:3.9      
-      working_directory: ~/repo
+      - image: circleci/python:3.9
+      
+    working_directory: ~/repo
 
  steps:
   # Step1: Obtaining the repo from GitHub
