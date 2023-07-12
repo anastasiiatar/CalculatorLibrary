@@ -3,8 +3,9 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.9git add 
-      working_directory: ~/repo
+      - image: circleci/python:3.9
+      
+    working_directory: ~/repo
 
  steps:
   # Step1: Obtaining the repo from GitHub
